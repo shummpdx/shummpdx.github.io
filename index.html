@@ -14,10 +14,10 @@
             <nav>
                 <ul class="nav-list">
                     <div class="navContainer">
-                    <li class="list-item"><a href="/#top" class="nav-link" data-target="#top">Home</a></li>
-                    <li class="list-item"><a href="/#about" class="nav-link" data-target="#about">About</a></li>
+                    <li class="list-item"><a href="/#about" class="nav-link" data-target="#about">Home</a></li>
+                    <li class="list-item"><a href="/#work" class="nav-link" data-target="#experience">Experience</a></li>
                     <li class="list-item"><a href="/#projects" class="nav-link" data-target="#projects">Projects</a></li>
-                    <li class="list-item"><a href="/#contact" class="nav-link" data-target="#contacts">Contact</a></li>
+                    <li class="list-item"><a href="/#contactMe" class="nav-link" data-target="#contacts">Contact</a></li>
                     </div>
                 </ul>
             </nav>
@@ -138,7 +138,7 @@
                             <div class="projDes"></div>
                         </div>
                     </div>
-                          
+
                     <div class="container">
                         <img src="images/CAT.png" alt="Avatar" class="image">
                         <div class="middle">
@@ -150,19 +150,24 @@
                 </div>
               </section>
             <section id="contactMe">
-                <div class="form">
-                    <form action="">
-                      <h1>Contact Me:</h1>
+                    <div class="form-element"> 
+                        <div class="contactBox">
+                            <h1>Contact</h1>   
+                        </div>
+
+                        <div class="form">  
+                            <form action="">    
+                                <label for="username"></label>
+                                <input type="text" name="name" id="name" class="input" placeholder="Name">    
+                                <label for="email"></label>
+                                <input type="text" name="email" id="email" class="input" placeholder="Email">
+                                <label for="comment"></label>
+                                <textarea id="comment" class="commentInput" placeholder="Comment" rows="5"></textarea>
             
-                      <div class="form-element">     
-                        <label for="username">Name:</label>
-                        <input type="text" name="name" id="name" class="input">    
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" class="input">
-                        <label for="password">Comment:</label>
-                        <input type="text" name="comment" id="comment" class="input">   
-                        </div>         
-                    </form>
+                                    <input type="submit" value="submit" class="btnPrimary">
+    
+                            </form>
+                        </div>  
                 </div>
             </section>
         </main>
