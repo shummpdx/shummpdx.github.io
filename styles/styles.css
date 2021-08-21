@@ -16,7 +16,7 @@ a:active {
 .nav-list {
     list-style-type: none;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     background-color: #f7f7f7;
     width: 100%;
     position: fixed;
@@ -342,6 +342,7 @@ legend {
   .container:hover .image {
     opacity: 0.3;
     transform: scale(1.2);
+    transition-duration: 0.3s;
     overflow: hidden;
   
   }
