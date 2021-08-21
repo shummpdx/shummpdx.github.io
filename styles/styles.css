@@ -149,12 +149,7 @@ body {
 #projects {
     margin-bottom: 100px;
 }
-.projectsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 40px;
-}
+
 
 .card {
     position: relative;
@@ -168,44 +163,6 @@ body {
     width: 275px;
     object-fit: fill;
     border-radius: 16px;
-}
-
-.imgOverlay {
-    position: absolute;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #E4E4E1;
-    /*background: linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
-    
-    height: 94%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-
-.card:hover .imgOverlay{
-    opacity: 0.95;
-    transition: 0.35s ease-in-out;
-    transform: scale(1.1);
-    border-radius: 32px;
-    overflow: hidden;
-}
-
-.imgTitle {
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.imgDescript {
-    display: flex;
-    padding: 15px;
-    text-align: left;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 .form {
@@ -276,15 +233,35 @@ legend {
 }
 
 .projectsContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    
+}
+
+@media (min-width: 1201px) {
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    
 }
 
 .container {
     position: relative;
-    width: 20%;
+    width: 85%;
     border-radius: 16px;
     border: 1px solid black;
     overflow: hidden;
