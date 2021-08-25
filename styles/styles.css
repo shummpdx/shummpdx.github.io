@@ -260,11 +260,50 @@ a:active {
     margin-bottom: 100px;
 }
 
+
 .projectsContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     justify-items: center;
+}
+  
+.text {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #434343); 
+    color: white;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.text p {
+    font-size: 20px;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .text {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, #434343); 
+        color: white;
+        font-size: 20px;
+        border-radius: 16px;
+    }
+
+    .text p {
+        padding: 8px;
+        font-size: 20px;
+    }
+    
 }
 
 @media (min-width: 1201px) {
@@ -273,6 +312,20 @@ a:active {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 15px;
         justify-items: center;
+    }
+
+    .text {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, #434343); 
+        color: white;
+        font-size: 20px;
+        border-radius: 16px;
+    }
+    
+    .text p  {
+        font-size: 14px;
+        padding: 10px;
     }
     
 }
@@ -320,20 +373,7 @@ a:active {
     height: 100%;
 }
  
-  
-.text {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #000000, #434343); 
-    color: white;
-    font-size: 20px;
-    border-radius: 16px;
-}
 
-.text p  {
-    font-size: 14px;
-    padding: 15px;
-}
 
 #contactMe {
     padding: 50px 0;
