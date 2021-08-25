@@ -7,17 +7,19 @@
         <title>Sean Humm</title> 
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
         <!-- Icons taken from: https://www.icons8.com -->
+        
     </head>
     <body>
         <main>
             
+    
             <nav>
                 <ul class="nav-list">
                     <div class="navContainer">
-                    <li class="list-item"><a href="/#about" class="nav-link" data-target="#about">Home</a></li>
-                    <li class="list-item"><a href="/#work" class="nav-link" data-target="#experience">Experience</a></li>
-                    <li class="list-item"><a href="/#projects" class="nav-link" data-target="#projects">Projects</a></li>
-                    <li class="list-item"><a href="/#contactMe" class="nav-link" data-target="#contacts">Contact</a></li>
+                        <li><a href="/#about" class="nav-link" data-target="#about">Home</a></li>
+                        <li><a href="/#work" class="nav-link" data-target="#experience">Experience</a></li>
+                        <li><a href="/#projects" class="nav-link" data-target="#projects">Projects</a></li>
+                        <li><a href="/#contactMe" class="nav-link" data-target="#contacts">Contact</a></li>
                     </div>
                 </ul>
             </nav>
@@ -29,12 +31,43 @@
                 <div class="heroContainer">
                     <div class="profileCard">
                         <img src='images/me.png' class="pfp" alt="This is me...not really">
-                        <h3 class="name">Sean Humm</h3>
+                        <h3>Sean Humm</h3>
                         <p class="graduate">Portland State Computer Science Graduate Student</p>                    
                         <ul class="networkItems">
-                            <li class="contactItem"><img src="images/icons8-mail-50.png" class="contactMe"></li>
-                            <li class="contactItem"><img src="images/icons8-github-50.png" class="contactMe"></li>
-                            <li class="contactItem"><img src="images/icons8-monstera-leaf-50.png" class="contactMe"></li>
+                            <a href="mailto: hummsean@pdx.edu"> 
+                                <li><img src="images/icons8-mail-50.png" class="contactMe"></li>
+                            </a>
+                            <a href="https://github.com/shummpdx/">
+                                <li><img src="images/icons8-github-50.png" class="contactMe"></li>
+                            </a>
+
+                            <img id="myImg" src="images/nclCard.png" alt="">
+                            <li><img src="images/icons8-monstera-leaf-50.png" id="plantModal" onclick="openModal(); currnetSlide(1)"></li>
+                            <div id="simpleModal" class="modal">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
+                                
+                                    <div class ="mySlides">
+                                    <img src="images/plant3.jpg" class="demo"> 
+                                    </div>
+                                   
+                                    <div class ="mySlides">
+                                    <img src="images/plant2.jpg" class="demo">
+                                    </div>
+
+                                    <div class ="mySlides">
+                                    <img src="images/plant4.jpg" class="demo">
+                                    </div>
+                                       
+                                    <div class ="mySlides">
+                                    <img src="images/plant1.jpg" class="demo">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+                                </div>
+                            </div>    
+
                         </ul>
                     </div>
                     <div class="info">
@@ -78,32 +111,32 @@
                     <h1> Skills </h1>
                     <div class="skillContainer">
                         <div class="skill">
-                            <img src="images/icons8-linux-50.png" class="icon">
+                            <img src="images/icons8-linux-50.png">
                             <h3>Linux</h3>
                             <p> SSH, File Permissions, Vim, nmap, gobuster/dirbuster, hydra, John,</p>
                         </div>
                         <div class="skill">
-                            <img src="images/icons8-networking-manager-50.png" class="icon">
+                            <img src="images/icons8-networking-manager-50.png">
                             <h3>Networking</h3>
                             <p> OSI layers, TCP/UDP, Networking Devices </p>
                         </div>
                         <div class="skill">
-                            <img src="images/icons8-burp-suite-50.png" class="icon">
+                            <img src="images/icons8-burp-suite-50.png">
                             <h3>Burpsuite</h3>
                             <p>Proxy, Repeater, Intruder, Target (spider), Sequencer</p>
                         </div>
                         <div class="skill">
-                            <img src="images/icons8-database-50.png" class="icon">
+                            <img src="images/icons8-database-50.png">
                             <h3>Databases</h3>
                             <p>mySQL</p>
                         </div>
                         <div class="skill">
-                            <img src="images/icons8-code-50.png" class="icon">
+                            <img src="images/icons8-code-50.png">
                             <h3>Software Development</h3>
                             <p>C, C++, Python, JavaScript, HTML, CSS, git, API</p>
                         </div>
                         <div class="skills">
-                            <img src="images/icons8-knowledge-sharing-50.png" class="icon">
+                            <img src="images/icons8-knowledge-sharing-50.png">
                             <h3>Mentoring</h3>
                             <p>Code debugging, public speaking, documentation</P>
                         </div>
@@ -116,35 +149,73 @@
                 <div class="projectsContainer">
 
                     <div class="container">
-                        <img src="images/psuCrypt.jpg" alt="Avatar" class="image">
+                        <a href="https://github.com/shummpdx/psu-crypt">
+                        <img src="images/psuCrypt.jpg" alt="psuCrypt" class="image">
                         <div class="middle">
-                            <div class="text">PSU Crypt</div>
-                            <div class="projDes"></div>
+                            <div class="text">PSU Crypt
+                            <p>PSU Crypt is a Feistel Cipher that I created for CS585: Cryptology. It will encrypt/decrypt
+                                based on a user generated key. This unqiue cipher has the same algorithm for encrytion and 
+                                decryption. Not for use in production. </p>
+                            </div>
                         </div>
+                        </a>
                     </div>
               
                     <div class="container">
-                        <img src="images/ssc.png" alt="Avatar" class="image">
+                        <a href="https://docs.google.com/document/d/1uCUx_tnObCdM_4ODP5sz_WjUAQB8u8V2_65oiZEsw6w/edit?usp=sharing">
+                        <img src="images/ssc.png" alt="Sean's Security Compendium" class="image">
                         <div class="middle">
-                            <div class="text">Sean's Security Compendium</div>
-                            <div class="projDes"></div>
+                            <div class="text">Sean's Security Compendium
+                            <p>This is a journal I've been keeping as I learn about different vulnerabilites and exploits.
+                                Much of the information comes from the modules found on the TryHackMe site.</p>
+                            </div>
                         </div>
+                        </a>
                     </div>
                   
                     <div class="container">
-                        <img src="images/nclFull.png" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">National Cyber League</div>
-                            <div class="projDes"></div>
+                        <img src="images/nclCard.png" alt="National Cyber League" class="image" >
+                        <div class="middle" onclick="openCtfModal();currentSlide(1)">
+                            <div class="text">National Cyber League
+                                <p>The national Cyber League is a security competition that teaches and test students against
+                                    practical cyber security challenges ranging from enumeration, pasword cracking, log analysis, 
+                                    and pentesting/audting vulnerable websites. These are my results from the last three years.</p>
+                            </div>
+                           
                         </div>
                     </div>
 
-                    <div class="container">
-                        <img src="images/CAT.png" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Computer Action Team</div>
-                            <div class="projDes"></div>
+                    <div id="ctfModal" class="modal">
+                        <span class="close cursor" onclick="closeCtfModal()">&times;</span>
+                        <div class="modal-content">
+                        
+                            <div class ="myCtfSlides">
+                            <img src="images/nclCard.png" class="demo1">
+                            </div>
+                           
+                            <div class ="myCtfSlides">
+                            <img src="images/ncl2019Card.png" class="demo1">
+                            </div>
+
+                            <div class ="myCtfSlides">
+                            <img src="images/ncl2018Card.png" class="demo1"> 
+                            </div>
+
+                            <a class="prev" onclick="plusCtfSlides(-1)">&#10094</a>
+                            <a class="next" onclick="plusCtfSlides(1)">&#10095</a>
                         </div>
+                    </div>
+            
+                    <div class="container">
+                        <a href="https://cat.pdx.edu/platforms/linux/how-to/web-servers-file-permissions/">
+                        <img src="images/CAT.png" alt="Computer Action Team" class="image">
+                        <div class="middle">
+                            <div class="text">Computer Action Team
+                                <p>A techincial tutorial on Web Servers and File Permissions I co-wrote with another volunteer Caper.</p>
+                            </div>
+                            
+                        </div>
+                        </a>
                     </div>
                 
                 </div>
@@ -156,7 +227,7 @@
                         </div>
 
                         <div class="form">  
-                            <form action="">    
+                            <form action="" onsubmit="return validateForm()">    
                                 <label for="username"></label>
                                 <input type="text" name="name" id="name" class="input" placeholder="Name">    
                                 <label for="email"></label>
@@ -164,12 +235,13 @@
                                 <label for="comment"></label>
                                 <textarea id="comment" class="commentInput" placeholder="Comment" rows="5"></textarea>
             
-                                    <input type="submit" value="submit" class="btnPrimary">
+                                <input type="submit" value="submit" class="btnPrimary">
     
                             </form>
                         </div>  
                 </div>
             </section>
-        </main>
+        </main> 
+        <script src="modal.js"></script>
     </body>
 </html>
