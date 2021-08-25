@@ -30,7 +30,10 @@ a:active {
     display: flex;
     flex-direction: row;
     padding: 10px;
-}.radio{
+    justify-content:flex-end;
+}
+
+.radio{
     display: block;
     font-size: 80%;
 }
