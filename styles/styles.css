@@ -16,8 +16,6 @@ a:active {
 
 .nav-list {
     list-style-type: none;
-    display: flex;
-    justify-content: right;
     background-color: #f7f7f7;
     width: 100%;
     position: fixed;
