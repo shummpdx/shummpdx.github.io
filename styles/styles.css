@@ -350,6 +350,7 @@ a:active {
 .container:hover .middle {
     opacity: 1;
 }
+
 .image {
     opacity: 1;
     display: block;
@@ -363,6 +364,7 @@ a:active {
 }
   
 .middle {
+    cursor: pointer;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
