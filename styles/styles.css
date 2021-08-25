@@ -134,7 +134,9 @@ a:active {
 .demo1 {
     position: relative;
     left: 45px;
+    width: 60%;
     max-width: 600px;
+    padding: 80px;
 } 
 
 .prev,
